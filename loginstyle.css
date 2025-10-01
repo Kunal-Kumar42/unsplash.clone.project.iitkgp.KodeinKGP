@@ -41,4 +41,11 @@ p{
 #other{
     font-size: 1em;
     margin-bottom:80px;
+
+}
+    @media (max-width:800px){
+    form{
+        height:86%;
+        width:76%;
+    }
 }
