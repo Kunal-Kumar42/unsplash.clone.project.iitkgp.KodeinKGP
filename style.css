@@ -1,0 +1,158 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height:fit-content;
+}
+.sidebar{
+    width :40px;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    position : fixed;
+    top:0;
+    left:0;
+    border-right:3px solid black;
+}
+.sidebar i{
+    font-size:18px;
+    padding-left: 10px;
+    padding-top:15px;
+    padding-bottom:15px;
+}
+
+#pen{
+    margin-bottom:50px;
+}
+#download{
+    margin-bottom: 210px;
+}
+header{
+    position:fixed;
+    height:8%;
+    width:95%;
+    margin-left : 70px;
+    border-bottom: 3px solid black;
+}
+header a{
+    text-decoration: none;
+    color:black;
+}
+.upper{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height:50%;
+    margin-right:10px;
+    margin-top:10px;
+}
+.searchbox{
+    padding:3px;
+    background-color: #dad7cd;
+    border-radius: 3%;
+    width:70%;
+}
+.searchbox input{
+    width:95%;
+    border: none;
+}
+main{
+    margin-left:60px;
+    position:relative;
+    top:90px;
+    height:88vh;
+    width: 96.5%;
+}
+.display{
+    width:100%;
+    height:100%;
+}
+iframe{
+    width:100%;
+    height:100%;
+    z-index: -10;
+}
+
+
+@media(max-width:1000px){
+    .Unsplash{
+        display:none;
+    }
+}
+@media(max-width:800px){
+    .upper button{
+        display:none;
+    }
+}
+@media (max-width: 600px) {
+  .sidebar {
+    width: 100%;
+    height: 9px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    position: fixed;
+    top: 3px;
+    left: 0;
+    border: none;
+  }
+
+  header {
+    position: fixed;
+    top: 60px;
+    height: 8%;
+    width: 99%;
+    margin-left: 5px;
+    border-bottom: 3px solid black;
+  }
+
+  .upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90%;
+    margin-right: 10px;
+  }
+
+  .searchbox {
+    padding: 3px;
+    background-color: #dad7cd;
+    border-radius: 3%;
+    width: 70%;
+    display:flex;
+  }
+
+  .searchbox input {
+    width: 95%;
+    border: none;
+  }
+
+  #pen {
+    margin-right: 40%;
+  }
+
+  #compass {
+    display: none;
+  }
+
+  #files {
+    display: none;
+  }
+
+  #download {
+    display: none;
+  }
+
+  .login {
+    display: none;
+  }
+
+  main {
+    margin-left: 5px;
+    position: relative;
+    top: 140px;
+    height: 78vh;
+    width: 98%;
+  }
+}

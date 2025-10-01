@@ -1,0 +1,33 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: auto;
+}
+main{
+    padding:20px;
+    column-count: 3;
+    column-gap: 20px;
+    background-color: #d9d9d9;
+}
+img{
+    width:100%;
+    height:auto;
+    border-radius: 5%;
+    border: 4px solid black;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+ 
+@media(max-width:600px){
+  main{
+    display:flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+}
+
+@media(max-width:900px){
+  main{
+    column-count: 2;
+  }
+}
